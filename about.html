@@ -1,0 +1,262 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Pixels</title>
+    <link rel="stylesheet" href="css/styles2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">Pixels</a>
+
+        <div class="nav-main-content">
+          <div class="nav-links" id="navLinks">
+            <div class="nav-item with-dropdown">
+              <a href="#" class="nav-link">
+                Explore <i class="fas fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a href="#">Discover Photos</a>
+                <a href="#">Leaderboard</a>
+                <a href="#">Challenges</a>
+                <a href="#">Free Videos</a>
+                <a href="#">Pixels Blogs</a>
+              </div>
+            </div>
+
+            <a href="license.html">License</a>
+
+            <div class="more-menu">
+              <a href="#" class="ellipsis-toggle">...</a>
+              <div class="dropdown-ellipsis">
+                <a href="#">Image & Video API</a>
+                <a href="#">Apps & Plugins</a>
+                <a href="#">Help Center</a>
+                <a href="#">Report Content</a>
+                <a href="#">Partnerships</a>
+                <a href="#">Imprint & Terms</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="notification"
+            ><i class="fa-regular fa-bell"></i
+          ></a>
+
+          <button class="btn-upload">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </button>
+
+          <div class="nav-actions">
+            <a href="#" class="desktop-user"><i class="fas fa-user"></i></a>
+            <a href="#" class="upload">Upload</a>
+          </div>
+        </div>
+
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- About Header -->
+    <header class="license-header">
+      <div class="license-categories">
+        <a href="about.html" class="active">About Us</a>
+        <a href="license.html">License</a>
+        <a href="help.html">Help Center</a>
+      </div>
+      <div class="container">
+        <h1>About Pixels</h1>
+        <p>Empowering Creators with Free Visual Content</p>
+      </div>
+    </header>
+
+    <!-- Main About Us Content -->
+    <main class="license-content">
+      <div class="container">
+        <section class="license-section">
+          <h2>Our Mission</h2>
+          <p>
+            Pixels provides high-quality and completely free stock photos and
+            videos, licensed under the Pixels license. All content is
+            contributed by talented creators around the world.
+          </p>
+        </section>
+
+        <section class="license-section">
+          <h2>Why We Exist</h2>
+          <p>
+            Our goal is to help designers, bloggers, marketers, and everyone
+            else who needs visuals by offering them free, beautiful imagery they
+            can use anywhere – no strings attached.
+          </p>
+        </section>
+
+        <section class="license-section">
+          <h2>Meet Our Contributors</h2>
+          <p>
+            Pixels thrives thanks to our amazing global community of
+            photographers and videographers. Each contributor helps power
+            creativity by sharing their vision with the world.
+          </p>
+        </section>
+
+        <section class="license-section">
+          <h2>Join the Community</h2>
+          <p>
+            Whether you’re looking for visuals or want to share your own work,
+            Pixels is for you. Upload your content, inspire others, and build
+            your portfolio on a platform built for creative freedom.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Free Stock Photos</h3>
+            <ul>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Black and white photography</a></li>
+              <li><a href="#">Happy birthday images</a></li>
+              <li><a href="#">Free business videos</a></li>
+              <li><a href="#">Happy new year images</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">License</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Get Started</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Partnerships</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Social Media</h3>
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>2025 Pexels Clone. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navMainContent = document.querySelector(".nav-main-content");
+        const withDropdowns = document.querySelectorAll(
+          ".nav-item.with-dropdown"
+        );
+        const moreMenus = document.querySelectorAll(".more-menu");
+
+        // Toggle mobile menu
+        if (hamburger && navMainContent) {
+          hamburger.addEventListener("click", (e) => {
+            e.stopPropagation();
+            navMainContent.classList.toggle("active");
+
+            // Toggle icon hamburger
+            const icon = hamburger.querySelector("i");
+            if (navMainContent.classList.contains("active")) {
+              icon.classList.remove("fa-bars");
+              icon.classList.add("fa-times");
+            } else {
+              icon.classList.remove("fa-times");
+              icon.classList.add("fa-bars");
+            }
+          });
+        }
+
+        // Handle dropdown menus
+        withDropdowns.forEach((dropdown) => {
+          const link = dropdown.querySelector(".nav-link");
+
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation(); // Agar tidak menutup saat diklik
+            dropdown.classList.toggle("open");
+          });
+        });
+
+        // Handle more menus
+        moreMenus.forEach((menu) => {
+          const toggle = menu.querySelector(".ellipsis-toggle");
+
+          toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation(); // Agar tidak menutup saat diklik
+            menu.classList.toggle("open");
+          });
+        });
+
+        // Close menus when clicking outside
+        document.addEventListener("click", (e) => {
+          // Close main menu
+          if (
+            navMainContent.classList.contains("active") &&
+            !e.target.closest(".nav-main-content") &&
+            !e.target.closest(".hamburger")
+          ) {
+            navMainContent.classList.remove("active");
+            const icon = hamburger.querySelector("i");
+            icon.classList.remove("fa-times");
+            icon.classList.add("fa-bars");
+          }
+
+          // Close dropdowns
+          withDropdowns.forEach((dropdown) => {
+            dropdown.classList.remove("open");
+          });
+
+          // Close more menus
+          moreMenus.forEach((menu) => {
+            menu.classList.remove("open");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
